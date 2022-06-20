@@ -1,0 +1,24 @@
+*{
+    /* 初始化 取消页面元素内外边距 */
+    margin: 0;
+    padding: 0;
+	color:#FFF;
+}
+body{
+    background-color: #0f0f11;
+    /* 弹性布局 水平、垂直居中 */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /* 100%窗口高度 */
+}
+.x-box{
+	display: block;
+	width: 90vw;
+	height: 40vh;
+	margin:3vh 5vw;
+	background-color: #222;
+  	border-radius:25px;
+	border:2px solid #fff;
+}

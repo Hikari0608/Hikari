@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="../fonts/font.css">
+    <script src="jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <input type="text" class="txtb" placeholder="Search">
+      <div class="comp">
+        <h3>铁杆粉丝</h3>
+          
+      </div>
+      <div class="notcomp">
+        <h3>普通粉丝</h3>
+
+
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      $(".txtb").on("keyup",function(e){
+        //13  means enter button
+        if(e.keyCode == 13 && $(".txtb").val() != "")
+        {
+          var task = $("<div class='task'></div>").text($(".txtb").val());
+          var del = $("<i class='icon-trash'></i>").click(function(){
+            var p = $(this).parent();
+            p.fadeOut(function(){
+              p.remove();
+            });
+          });
+
+          var check = $("<i class='icon-add'></i>").click(function(){
+            var p = $(this).parent();
+            p.fadeOut(function(){
+              $(".comp").append(p);
+              p.fadeIn();
+            });
+            $(this).remove();
+          });
+
+          task.append(del,check);
+          $(".notcomp").append(task);
+            //to clear the input
+          $(".txtb").val("");
+        }
+      });
+    </script>
+
+  </body>
+</html>

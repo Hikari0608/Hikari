@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset='utf-8'>
+</head>
+<body>
+   那个。。。2014年的mac mini ,不升级系统不让开发ios应用。升级后直接卡的要死，又不能降级，坑啊！<br>
+   于是，我这两天给他装上了CentOS！嘿嘿。。。 然后。。。 无线网卡无法用，What?!! 配了好久没配成功<br>
+   于是，弄了一个旧路由器做“桥接”，直接使用mac mini的有线接口，可以上网了。。<br>
+   但！ 坑爹的360mini路由器，只能向外访问网络，局域网的机器不能访问这台机器，这还怎么做服务器？<br>
+   所以，用了我的老的tp-link的路由器，还是tp-link给力！<br>
+   弄好之后，给centos 装上 x-window gnome vnc-server,这样就不需要接显示器，可以直接用vnc管理了。 <br>
+   配好ssh,远程字符界面管理也搞定了。。<br>
+   路由器自带DDNS，然后暴露出80端口，再然后，docker-compose一个Nginx+PHP-fpm+MySQL。终于搞定了<br>
+   就让他作为服务器，一直跑着吧！<br>
+   <img width=300 src='mac.jpg'>
+   路由器上留下孩子的涂鸦。。。<br>
+   考虑弄一个电表测一下他的功率。。看看平常费多少电。。。
+</body>
+</html>
+

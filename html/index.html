@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>不偷看密码的超萌猫头鹰</title>
+    <link rel="stylesheet" href="./css/50.css">
+    <link rel="stylesheet" href="./css/style.css">
+<script src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#password').focus(function(){
+                // 密码框获得焦点，追加样式.password
+                $('#owl').addClass('password');
+            }).blur(function(){
+                // 密码框失去焦点，移除样式.password
+                $('#owl').removeClass('password');
+            })
+        })
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+		<div class="hot-area">
+			<!-- 01 card -->
+			<div class="card" style="--delay:-1;">
+				<div class="content">
+					<div class="img">
+						<img src="images/img-1.jpeg" alt="">
+					</div>					
+					<div class="details">
+
+						<span class="name">1. 轻松管理粉丝</span>
+						
+					</div>
+				</div>
+				<a href="register/">立即注册</a>
+			</div>
+			<!-- 02 card -->
+			<div class="card" style="--delay:0;">
+				<div class="content">
+					<div class="img">
+						<img src="images/img-2.jpeg" alt="">
+					</div>
+					<div class="details">
+
+						<span class="name">2. 精确分析数据</span>
+						
+					</div>
+				</div>
+				<a href="register/">立即体验</a>
+			</div>
+			<!-- 03 card -->
+			<div class="card" style="--delay:1;">
+				<div class="content">
+					<div class="img">
+						<img src="images/img-3.jpeg" alt="">
+					</div>
+					<div class="details">
+
+						<span class="name">3. 掌握涨粉诀窍</span>
+						
+					</div>
+				</div>
+				<a href="register/">立即注册</a>
+			</div>
+			<!-- 04 card -->
+			<div class="card" style="--delay:2;">
+				<div class="content">
+					<div class="img">
+						<img src="images/img-4.jpeg" alt="">
+					</div>
+					<div class="details">
+
+						<span class="name">4. 更多功能等你探索</span>
+						
+					</div>
+				</div>
+				<a href="register/">立即体验</a>
+			</div>
+			<!-- 05 card -->
+			<!-- IMPORTANT: the customize delay value is "2", in the style animation-delay 
+			we want bypass the 40% animation process.
+			-->
+			<div class="card" style="--delay:2;">
+				<div class="content">
+					<div class="img">
+						<img src="images/img-5.jpeg" alt="">
+					</div>
+					<div class="details">
+
+						<span class="name">5. 更多功能等你探索</span>
+						
+					</div>
+				</div>
+				<a href="register/">立即加入</a>
+			</div>
+		</div>
+	</div>
+    <div class="login-box">
+        <div class="owl" id="owl">
+            <div class="hand"></div>
+            <div class="hand hand-r"></div>
+            <div class="arms">
+                <div class="arm"></div>
+                <div class="arm arm-r"></div>
+            </div>
+        </div>
+        <form class="input-box" action="login.php" method="post">
+            <input type="text" placeholder="账号" name="username">
+            <input type="password" placeholder="密码" id="password" name="password">
+            <button type="submit" name="login">登录</button>
+        </form>
+    </div>
+</body>
+
+</html>

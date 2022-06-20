@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+body{
+    background-color: #0f0f11;
+    /* 100%窗口高度 */
+    height: 100vh;
+}
+
+
+.container{
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+.txtb{
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  background: none;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+  border-radius:25px;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+.task{
+  width: 100%;
+  background-color: #333;
+  padding: 25px;
+  margin: 6px 0;
+  overflow: hidden;
+  border-radius:25px;
+  color: #fff;
+}
+
+.task i{
+  float: right;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.comp .task{
+  background: #777;
+  color: #fff;
+}
